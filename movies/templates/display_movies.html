@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}{{Movies}{% endblock title %}
+{% block content %}
+
+        <h1>{{Peliculas}}</h1>
+    </div>
+    <p>Detalles <strong>{{ pelicula | capfirst }}</strong></p>
+    <h3>Caracteristicas:</h3>
+    <ul>
+        <li>Año de Publicacion: {{ peliculas.publication_date}}</li>
+        <li>Director: {{ peliculas.director}}</li>
+        <li>Genero: {{ peliculas.gender}}</li>
+        <li>Sinopsis:{{peliculas.synopsis}}</li>
+    </ul>
+    
+    <a href="/">Regresar</a>
+{% endblock content %}

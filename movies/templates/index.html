@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Movies{% endblock title %}
+{% block content %}
+
+    <p class="p-2">Bienvenido a mi sitio de peliculas</p>
+    <ul class="list-group">
+        {% for movies in movies %}
+        <li class="list-group-item">
+            <a href="movie/{{movie.pk}}">{{ movie | capfirst }}</a>
+            <p>{{ peliculas.publication_date}} </p>
+        </li>
+        {% endfor %}
+    </ul>
+{% endblock content %}
+
