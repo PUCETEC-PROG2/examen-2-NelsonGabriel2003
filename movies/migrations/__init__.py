@@ -13,6 +13,7 @@ class Migration(migrations.Migration):
             name='Movies',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('name', models.CharField(max_length=30)),
                 ('publication_date', models.CharField(max_length=30)),
                 ('director', models.CharField(max_length=30)),
                 ('gender', models.CharField(max_length=30)),

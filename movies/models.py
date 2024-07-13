@@ -2,6 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Movies (models.Model):
+    name=models.CharField(max_length=30, null=False)
     publication_date = models.CharField(max_length=30, null=False)
     director = models.CharField(max_length=30, null=False)
     gender = models.CharField(max_length=30, null=False)
